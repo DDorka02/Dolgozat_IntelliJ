@@ -24,11 +24,6 @@ public class Tabla {
         }
     }
 
-
-    public void fajlbair(){
-
-    }
-
     public void megjelenit(){
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
@@ -48,8 +43,27 @@ public class Tabla {
         }
     }
 
+    public boolean UresOSzlop(int oszlop) {
+        boolean vantelioszlop = false;
+        if (oszlop >= 0 && oszlop < 7)
+            for (int j = 0; j < 8; j++) {
+                if (t[oszlop][j] != ' ') {
+                    vantelioszlop = true;
+                }
+            }
+        return vantelioszlop;
+    }
 
-
+    public boolean UresSor(int sor) {
+        boolean vantelisor = false;
+        if (sor >= 0 && sor < 7)
+            for (int j = 0; j < 8; j++) {
+                if (t[sor][j] != ' ') {
+                    vantelisor = true;
+                }
+            }
+        return vantelisor;
+    }
 
 
 }
