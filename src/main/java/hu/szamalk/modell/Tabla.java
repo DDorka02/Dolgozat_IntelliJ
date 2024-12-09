@@ -65,5 +65,28 @@ public class Tabla {
         return vantelisor;
     }
 
+    public int UresOszlopokSzama(){
+        int oszlopszam = 0;
+        for (int i = 0; i < 8; i++) {
+                for (int j = 0; j < 8; j++) {
+                    if (t[i][j] != j) {
+                        oszlopszam++;
+                    }
+                }
+        }
+        return oszlopszam;
+    }
+
+    public int  UresSorokSzama(){
+        int sorszam = 0;
+        for (int i = 0; i < 8; i++) {
+                for (int j = 0; j < 5; j++) {
+                    if (t[i][j] != j) {
+                        sorszam++;
+                    }
+                }
+        }
+        return sorszam;
+    }
 
 }
