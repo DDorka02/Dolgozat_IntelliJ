@@ -1,15 +1,18 @@
 package hu.szamalk.modell;
 
-public class Babu {
+import java.util.Random;
+
+public class Babu{
     private int ero;
     private String szin;
 
     public Babu(String szin) {
-        this.szin = szin;
+        this(1,szin);
     }
 
     public Babu(int ero, String szin) {
-        this.ero = ero;
+        Random rnd = new Random();
+        this.ero = rnd.nextInt(1,9);;
         this.szin = szin;
     }
 }

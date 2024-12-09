@@ -1,9 +1,9 @@
 package hu.szamalk.modell;
 
 public abstract class Jatek {
-    protected int jatekDb;
+    protected static int jatekDb;
 
-    public int getJatekDb() {
+    public static int getJatekDb() {
         return jatekDb;
     }
 
