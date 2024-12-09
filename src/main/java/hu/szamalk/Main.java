@@ -15,5 +15,10 @@ public class Main {
         t.UresOSzlop(4);
         t.UresSor(5);
 
+        System.out.println("9.feladat: Üres oszlopok és sorok száma:");
+        System.out.println("Oszlopk:");
+        t.UresOszlopokSzama();
+        System.out.println("Sor:");
+        t.UresSorokSzama();
     }
 }
